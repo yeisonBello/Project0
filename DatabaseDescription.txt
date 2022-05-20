@@ -1,0 +1,47 @@
+Table: employees     // In this table I store the customers.
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id           | int         | NO   | PRI | NULL    | auto_increment |
+| name         | varchar(20) | YES  |     | NULL    |                |
+| email        | varchar(20) | YES  |     | NULL    |                |
+| password     | varchar(50) | NO   |     | NULL    |                |
+| balance      | double      | YES  |     | 0       |                |
+| FirstDeposit | double      | YES  |     | NULL    |                |
+| TranferMoney | double      | YES  |     | 0       |                |
++--------------+-------------+------+-----+---------+----------------+
+
+
+----------------------------------------------------------------------------------------------------------
+Table: employees3   //In this table I keep the employees. 
+
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra | 
++----------+-------------+------+-----+---------+-------+
+| id       | varchar(50) | YES  |     | NULL    |       |
+| password | varchar(50) | YES  |     | NULL    |       |
++----------+-------------+----------------------+-------+
+
++--------+----------+
+| id     | password |
++--------+----------+
+| admin1 |  123     |
+| admin2 |  123     |
+| admin3 |  123     |
++--------+----------+
+
+----------------------------------------------------------------------------------------------------------
+
+
+table:transaction  // in this table I keep record of the transaction 
++-----------------------+----------+------+-----+-------------------+-------------------+
+| Field                 | Type     | Null | Key | Default           | Extra             |
++-----------------------+----------+------+-----+-------------------+-------------------+
+| logindate             | datetime | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+| id                    | int      | YES  |     | NULL              |                   |
+| in_id                 | int      | YES  |     | NULL              |                   |
+| out_id                | int      | YES  |     | NULL              |                   |
+| transaction           | double   | YES  |     | NULL              |                   |
+| transactionComplete   | double   | YES  |     | NULL              |                   |
+| transactionIncomplete | double   | YES  |     | NULL              |                   |
++-----------------------+----------+------+-----+-------------------+-------------------+
